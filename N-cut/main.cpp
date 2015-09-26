@@ -15,7 +15,13 @@
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    ifstream inputData(argv[0]);
+    ifstream inputData("example.txt");
     ofstream outputData("result.txt");
-    
+    string line;
+    int graph[10][10];
+    while(!inputData.eof()){
+        getline(inputData,line);
+        
+    }
+    return 0;
 }
