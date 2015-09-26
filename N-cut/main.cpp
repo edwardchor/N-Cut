@@ -7,9 +7,16 @@
 //
 
 #include <iostream>
+#include <fstream>
+#include <vector>
+#include <string>
+
+using namespace std;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    ofstream myfile;
+    myfile.open ("example.txt");
+    myfile << "Writing this to a file.\n";
+    myfile.close();
     return 0;
 }
